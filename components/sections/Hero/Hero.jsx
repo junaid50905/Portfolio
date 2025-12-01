@@ -17,12 +17,11 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar"
 
-import PrimaryBtn from '@/components/ui/Buttons/PrimaryBtn/PrimaryBtn';
 
 export default function Hero() {
   return (
     <section>
-      <div className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
+      <div className="container mx-auto relative w-full h-[80vh] flex flex-col items-center justify-center overflow-hidden bg-white">
 
         {/* Floating Tech Icons */}
         <div className="absolute inset-0 pointer-events-none">
@@ -41,7 +40,7 @@ export default function Hero() {
           text-[10vw] 
           font-extrabold 
           text-black 
-          opacity-100
+          opacity-10
           select-none 
           z-0 
           leading-none 
@@ -92,11 +91,6 @@ export default function Hero() {
               </Avatar>
             </div>
             <span className="ml-2">80+ Happy Clients</span>
-          </div>
-
-          {/* CTA */}
-          <div className='mt-8'>
-            <PrimaryBtn text="Let's work together" className="mt-5"/>
           </div>
         </div>
       </div>

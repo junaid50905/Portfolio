@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState, useEffect } from "react";
 
+import PrimaryBtn from '@/components/ui/Buttons/PrimaryBtn/PrimaryBtn';
+
 export function Menu() {
   const navItems = [
     { name: "Home", link: "#features" },
@@ -39,26 +41,23 @@ export function Menu() {
 
   return (
     <div
-      className={`w-full transition-all duration-500 ${
-        isScrolled ? "fixed top-0 left-0 z-50" : "relative"
-      }`}
+      className={`w-full transition-all duration-500 ${isScrolled ? "fixed top-0 left-0 z-50" : "relative"
+        }`}
     >
       <Navbar
-        className={`transition-all duration-500 ${
-          isScrolled ? "" : "pt-4"
-        }`}
+        className={`transition-all duration-500 ${isScrolled ? "" : "pt-4"
+          }`}
       >
         <NavBody>
           <NavbarLogo
-            className={`transition-all duration-500 ${
-              isScrolled ? "scale-90" : "scale-100"
-            }`}
+            className={`transition-all duration-500 ${isScrolled ? "scale-90" : "scale-100"
+              }`}
           />
 
           <NavItems items={navItems} />
 
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Get in touch</NavbarButton>
+          <div>
+            <PrimaryBtn text="Get in touch" />
           </div>
         </NavBody>
 
@@ -87,9 +86,8 @@ export function Menu() {
               </a>
             ))}
 
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton className="w-full">Login</NavbarButton>
-              <NavbarButton className="w-full">Book a call</NavbarButton>
+            <div className="mt-5">
+              <PrimaryBtn text="Get in touch" />
             </div>
           </MobileNavMenu>
         </MobileNav>
