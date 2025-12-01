@@ -10,6 +10,13 @@ import Nodejs from '@/public/images/technologies/6.avif';
 
 import ProfileImage from '@/public/images/profile-image.jpg';
 
+
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+
 export default function Hero() {
   return (
     <section>
@@ -62,9 +69,26 @@ export default function Hero() {
 
           {/* Happy Clients */}
           <div className="flex items-center gap-2 mt-4 text-gray-600">
-            <Image width={40} height={40} src="/avatars/a1.png" alt="client1" className="w-7 h-7 rounded-full border" />
-            <Image width={40} height={40} src="/avatars/a2.png" alt="client2" className="w-7 h-7 rounded-full border -ml-3" />
-            <Image width={40} height={40} src="/avatars/a3.png" alt="client3" className="w-7 h-7 rounded-full border -ml-3" />
+            <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
+        <Avatar>
+          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage
+            src="https://github.com/maxleiter.png"
+            alt="@maxleiter"
+          />
+          <AvatarFallback>LR</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage
+            src="https://github.com/evilrabbit.png"
+            alt="@evilrabbit"
+          />
+          <AvatarFallback>ER</AvatarFallback>
+        </Avatar>
+      </div>
             <span className="ml-2">80+ Happy Clients</span>
           </div>
 

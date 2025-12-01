@@ -232,18 +232,29 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
-      href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
-    >
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-black dark:text-white">Startup</span>
-    </a>
+<a
+  href="#"
+  className="relative z-20 mr-4 flex items-center space-x-3 px-2 py-1 text-sm font-normal text-black"
+>
+  <img
+    src="https://i0.wp.com/www.commercialphotographynorthwestblog.co.uk/wp-content/uploads/2020/10/MDH_8729webqualitysquare.jpg?resize=560%2C560&ssl=1"
+    alt="logo"
+    width={40}
+    height={40}
+    className="rounded-full object-cover"
+  />
+
+  {/* Right side text */}
+  <div className="flex flex-col leading-tight">
+    <span className="font-semibold text-black dark:text-white">
+      Junaid Hossain
+    </span>
+    <span className="text-gray-500 dark:text-gray-300 text-xs">
+      Software Engineer
+    </span>
+  </div>
+</a>
+
   );
 };
 
