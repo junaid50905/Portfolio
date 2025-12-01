@@ -17,6 +17,8 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar"
 
+import PrimaryBtn from '@/components/ui/Buttons/PrimaryBtn/PrimaryBtn';
+
 export default function Hero() {
   return (
     <section>
@@ -58,8 +60,8 @@ export default function Hero() {
 
           {/* Profile Image */}
           <div className="mt-6 rounded-4xl shadow-xl">
-            <Image 
-              width={1000} 
+            <Image
+              width={1000}
               height={1000}
               src={ProfileImage}
               alt="Profile"
@@ -70,32 +72,32 @@ export default function Hero() {
           {/* Happy Clients */}
           <div className="flex items-center gap-2 mt-4 text-gray-600">
             <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-        <Avatar>
-          <AvatarImage
-            src="https://github.com/maxleiter.png"
-            alt="@maxleiter"
-          />
-          <AvatarFallback>LR</AvatarFallback>
-        </Avatar>
-        <Avatar>
-          <AvatarImage
-            src="https://github.com/evilrabbit.png"
-            alt="@evilrabbit"
-          />
-          <AvatarFallback>ER</AvatarFallback>
-        </Avatar>
-      </div>
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <Avatar>
+                <AvatarImage
+                  src="https://github.com/maxleiter.png"
+                  alt="@maxleiter"
+                />
+                <AvatarFallback>LR</AvatarFallback>
+              </Avatar>
+              <Avatar>
+                <AvatarImage
+                  src="https://github.com/evilrabbit.png"
+                  alt="@evilrabbit"
+                />
+                <AvatarFallback>ER</AvatarFallback>
+              </Avatar>
+            </div>
             <span className="ml-2">80+ Happy Clients</span>
           </div>
 
           {/* CTA */}
-          <button className="mt-6 px-10 py-4 bg-white border border-gray-300 shadow-lg rounded-full text-lg font-semibold hover:shadow-xl transition">
-            Lets Work Together!
-          </button>
+          <div className='mt-8'>
+            <PrimaryBtn text="Let's work together" className="mt-5"/>
+          </div>
         </div>
       </div>
     </section>
