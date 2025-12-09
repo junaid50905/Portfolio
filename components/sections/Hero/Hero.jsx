@@ -21,7 +21,7 @@ import {
 export default function Hero() {
   return (
     <section>
-      <div className="container mx-auto relative w-full h-[80vh] flex flex-col items-center justify-center overflow-hidden bg-white">
+      <div className="container mx-auto relative w-full h-[80vh] flex flex-col items-center justify-center overflow-hidden">
 
         {/* Floating Tech Icons */}
         <div className="absolute inset-0 pointer-events-none">
