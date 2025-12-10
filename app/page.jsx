@@ -5,11 +5,13 @@ import TechStack from "@/components/sections/TechStack/TechStack.jsx";
 import Features from "@/components/sections/Features/Features.jsx";
 import Testimonials from "@/components/sections/Testimonials/Testimonials.jsx";
 import FAQ from "@/components/sections/FAQ/FAQ.jsx";
+import Experience from "@/components/sections/Experience/Experience.jsx";
 
 export default function Home() {
   return (
     <>
     <Hero/>
+    <Experience/>
     <Projects/>
     <Bento/>
     <TechStack/>
